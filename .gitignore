@@ -1,0 +1,23 @@
+# Local .terraform directories
+**/.terraform/*
+
+# Terraform lock/state files (state lives remotely per backend.tf)
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Plan output files
+*.tfplan
+tfplan
+
+# Variable files that may contain secrets — keep committed .tfvars generic,
+# use *.auto.tfvars or environment-specific overrides for anything sensitive.
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+.terraformrc
+terraform.rc
