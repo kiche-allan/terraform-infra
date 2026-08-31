@@ -22,6 +22,8 @@ variable "bucket_names" {
 variable "resource_tags" {
   type = map(string)
   default = {
-    ManagedBy = "Terraform"
+    ManagedBy   = "Terraform"
+    Environment = "dev"
+    Owner       = "platform-team"
   }
 }
