@@ -1,3 +1,4 @@
+#tags
 variable "aws_region" {
   type    = string
   default = "us-west-2"
@@ -21,6 +22,8 @@ variable "bucket_names" {
 variable "resource_tags" {
   type = map(string)
   default = {
-    ManagedBy = "Terraform"
+    ManagedBy   = "Terraform"
+    Environment = "dev"
+    Owner       = "platform-team"
   }
 }
