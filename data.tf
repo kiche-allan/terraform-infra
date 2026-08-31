@@ -1,4 +1,4 @@
-# Query existing AWS VPC
+# Query existing AWS VPC. 
 data "aws_vpc" "default" {
   default = true
 }
