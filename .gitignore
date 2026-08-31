@@ -14,6 +14,8 @@ tfplan
 # Variable files that may contain secrets — keep committed .tfvars generic,
 # use *.auto.tfvars or environment-specific overrides for anything sensitive.
 *.tfvars.json
+secret.auto.tfvars
+*.secret.tfvars
 override.tf
 override.tf.json
 *_override.tf
@@ -21,3 +23,12 @@ override.tf.json
 
 .terraformrc
 terraform.rc
+
+# Environment / credential files — never commit real secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
+credentials
+.aws/
