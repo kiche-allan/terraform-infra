@@ -15,6 +15,7 @@ tfplan
 # use *.auto.tfvars or environment-specific overrides for anything sensitive.
 *.tfvars.json
 secret.auto.tfvars
+*.auto.tfvars
 *.secret.tfvars
 override.tf
 override.tf.json
